@@ -61,7 +61,7 @@ async function checkWallets() {
         console.log(`Checked: ${wallet.address} | Balance: ${ethBal} ETH`);
 
         // Optional: comment this out if too spammy
-        // await sendTelegramMessage(`Checked: ${wallet.address}\nBalance: ${ethBal} ETH`);
+        await sendTelegramMessage(`Checked: ${wallet.address}\nBalance: ${ethBal} ETH`);
       }
     } catch (err) {
       console.error("⚠️ Error checking wallet:", err.message);
